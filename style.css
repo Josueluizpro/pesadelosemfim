@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Topo */
+header .topo {
+    background: linear-gradient(90deg, #2a1a1a, #5c0f0f); /* tons escuros do jogo */
+    color: #ff8c00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .topo h1 {
+    font-size: 2em;
+}
+
+header .perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ff8c00;
+}
+
+/* Botão voltar */
+.botao-voltar {
+    padding: 15px 30px;
+    background: #1c1c1c;
+}
+
+.botao-voltar a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #ff8c00; /* pode variar cores por card depois */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* iframe para vídeo */
+.card iframe.video-card-iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #2a1a1a;
+    color: #ff8c00;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff8c00;
+}
